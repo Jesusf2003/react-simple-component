@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color: beige;
+}
+
+#contenedor {
+	width: 100%;
+}
+
+header {
+	background-color: cornflowerblue;
+}
+
+#titulo {
+	text-align: center;
+	font-style: italic;
+	color: red;
+}
+#numeros {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 15pt;
+	text-align: center;
+}
+#auto {
+	width: 96%;
+	margin-left: 2%;
+	padding-bottom: 20px;
+}
+#numeroAuto {
+	text-align: center;
+	color: blue;
+}
