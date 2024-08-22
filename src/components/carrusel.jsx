@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 
 const Carrusel = ({ images, interval = 1000 }) => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
     // useEffect(() => {
     //     const intervalId = setInterval(() => {
-    //         setCurrentImageIndex(prevIndex => (prevIndex + 1) % images.length);
-    //     }, interval);
+    //         setCurrentImageIndex(prevIndex => (prevIndex + 1) % carImages.length);
+    //     }, 3000);
     //     return () => clearInterval(intervalId);
-    // }, [images.length, interval]);
-    
+    // }, [carImages.length, 3000]);
+
     const verAuto = (index) => {
         setCurrentImageIndex(index);
     };
