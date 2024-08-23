@@ -1,8 +1,10 @@
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link, Route, Routes } from 'react-router-dom';
 import Home from './components/home';
 import Carrusel from './components/carrusel';
+import Formulary from './components/formulary';
+import Chau from './components/adio';
 
 function App() {
 
@@ -24,14 +26,22 @@ function App() {
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to={"/carrusel"} className="nav-link">Carrusel</Link>
+                        <Link to={"/mycarrusel"} className="nav-link">Carrusel</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to={"/form"} className="nav-link">Adios</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to={"/despedida"} className="nav-link">Adios</Link>
                     </li>
                 </div>
             </nav>
             <div className='container mt-3'>
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/carrusel" element={<Carrusel images={carImages}/>} />
+                    <Route path="/mycarrusel" element={<Carrusel images={carImages} />} />
+                    <Route path="/form" element={<Formulary />} />
+                    <Route path="/despedida" element={<Chau />} />
                 </Routes>
             </div>
         </div>
